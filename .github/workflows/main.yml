@@ -68,6 +68,7 @@ jobs:
       - name: Deploy API
         uses: Azure/k8s-deploy@v1.3
         with:
+          image: heniotierra/api-bootcamp-produto:${{github.run_number}}
           manifests: |
             k8s/api/deployment.yml
             k8s/api/service.yml
