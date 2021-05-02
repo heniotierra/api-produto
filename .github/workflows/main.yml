@@ -43,6 +43,6 @@ jobs:
           # Path to the Dockerfile
           file: ./src/Dockerfile
           push: true
-          tags:
+          tags: |
             heniotierra/api-bootcamp-produto:latest
             heniotierra/api-bootcamp-produto:${{github.run_number}}
