@@ -47,7 +47,7 @@ jobs:
             heniotierra/api-bootcamp-produto:latest
             heniotierra/api-bootcamp-produto:${{github.run_number}}
   CD:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     needs: [CI]
     steps:
       - uses: actions/checkout@v2
